@@ -60,9 +60,9 @@ export const ParallaxScroll = ({
                 width="400"
                 alt="thumbnail"
               />
-              {/* <FaInstagram
-                  className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 rounded-full p-2 hover:scale-110 transition-transform duration-300"
-                /> */}
+              <FaInstagram
+                  className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 rounded-full hover:scale-110 transition-transform duration-300"
+                />
               <FaGithub className="text-white text-3xl hover:text-gray-400 m-2" />
               </Link>
             </motion.div>
@@ -81,9 +81,9 @@ export const ParallaxScroll = ({
                 width="400"
                 alt="thumbnail"
               />
-              {/* <FaInstagram
-                  className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 rounded-full p-2 hover:scale-110 transition-transform duration-300"
-                /> */}
+              <FaInstagram
+                  className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 rounded-full hover:scale-110 transition-transform duration-300"
+                />
               <FaGithub className="text-white text-3xl hover:text-gray-400 m-2" />
               </Link>
             </motion.div>
@@ -102,9 +102,9 @@ export const ParallaxScroll = ({
                 width="400"
                 alt="thumbnail"
               />
-              {/* <FaInstagram
-                  className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 rounded-full p-2 hover:scale-110 transition-transform duration-300"
-                /> */}
+              <FaInstagram
+                  className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 rounded-full hover:scale-110 transition-transform duration-300"
+                />
               <FaGithub className="text-white text-3xl hover:text-gray-400 m-2" />
               </Link>
             </motion.div>
