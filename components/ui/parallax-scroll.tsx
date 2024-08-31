@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from 'react-icons/fa';
 
 interface Project {
     image: string;
@@ -48,45 +50,62 @@ export const ParallaxScroll = ({
             <motion.div
               style={{ y: translateFirst }} // Apply the translateY motion value here
               key={"grid-1" + idx}
+              className="relative"
             >
              <Link href={el.link}>
               <Image
                 src={el.image}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition ease-in-out delay-150 hover:-translate-y-1 hover:duration-300"
                 height="400"
                 width="400"
                 alt="thumbnail"
               />
+              {/* <FaInstagram
+                  className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 rounded-full p-2 hover:scale-110 transition-transform duration-300"
+                /> */}
+              <FaGithub className="text-white text-3xl hover:text-gray-400 m-2" />
               </Link>
             </motion.div>
           ))}
         </div>
         <div className="grid gap-10">
           {secondPart.map((el, idx) => (
-            <motion.div style={{ y: translateSecond }} key={"grid-2" + idx}>
+            <motion.div style={{ y: translateSecond }} key={"grid-2" + idx}
+            className="relative"
+            >
             <Link href={el.link}>
               <Image
                 src={el.image}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition ease-in-out delay-150 hover:-translate-y-1 hover:duration-300"
                 height="400"
                 width="400"
                 alt="thumbnail"
               />
+              {/* <FaInstagram
+                  className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 rounded-full p-2 hover:scale-110 transition-transform duration-300"
+                /> */}
+              <FaGithub className="text-white text-3xl hover:text-gray-400 m-2" />
               </Link>
             </motion.div>
           ))}
         </div>
         <div className="grid gap-10">
           {thirdPart.map((el, idx) => (
-            <motion.div style={{ y: translateThird }} key={"grid-3" + idx}>
+            <motion.div style={{ y: translateThird }} key={"grid-3" + idx}
+            className="relative"
+            >
               <Link href={el.link}>
               <Image
                 src={el.image}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0"
+                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition ease-in-out delay-150 hover:-translate-y-1 hover:duration-300"
                 height="400"
                 width="400"
                 alt="thumbnail"
               />
+              {/* <FaInstagram
+                  className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 rounded-full p-2 hover:scale-110 transition-transform duration-300"
+                /> */}
+              <FaGithub className="text-white text-3xl hover:text-gray-400 m-2" />
               </Link>
             </motion.div>
           ))}

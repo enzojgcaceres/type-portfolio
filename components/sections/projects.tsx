@@ -1,10 +1,16 @@
 "use client";
 import { ParallaxScroll } from "../ui/parallax-scroll";
+import { FaGithub } from 'react-icons/fa';
 
 export function Projects() {
   return ( 
-    <section id="projects" className="bg-black flex flex-col justify-center items-center gap-10" > 
-        <h2 className="text-white text-4xl">Projects</h2>
+    <section id="projects" className="bg-black flex flex-col justify-center items-center gap-10 p-10" >
+        <div className="flex items-center gap-5"> 
+          <h2 className="text-white text-4xl">Projects</h2>
+          <a href="https://github.com/tu_usuario" target="_blank" rel="noopener noreferrer">
+          <FaGithub className="text-white text-3xl hover:text-gray-400" />
+        </a>
+        </div>
         <ParallaxScroll projects={images} />
     </section> 
     );
